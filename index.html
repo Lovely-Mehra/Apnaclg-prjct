@@ -6,6 +6,25 @@
     <title>Sample Code</title>
 </head>
 <body>
-    
+    <script>
+         function list(){
+            return new Promise((resolve,reject)=>{
+                const success=true;
+                if (success){
+                    resolve({data:"hello"});
+                }else{
+                reject("hiee");
+                }
+            })
+            .then((result) => {
+                console.log(result.data)
+               
+                
+            }).catch((err) => {
+                console.log(err)
+            });
+        }
+       
+    </script>
 </body>
 </html>
